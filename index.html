@@ -83,19 +83,7 @@
 
       </div>
     </div>
-    <script type='text/javascript'
-    src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
-    <script type='text/javascript'>
-    function GetMap()
-    {
-        var map = new Microsoft.Maps.Map('#myMap');
-
-        //Add your post map load code here.
-    }
-    </script>
-    <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
-
+    
     <!-- Carousel
     ================================================== -->
     <div id="mainCarousel">
@@ -108,42 +96,19 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
+    <script type='text/javascript'>
+    function GetMap()
+    {
+        var map = new Microsoft.Maps.Map('#myMap');
+
+        //Add your post map load code here.
+    }
+    </script>
+    
+
           <div id="map" style="height: 400px; width: 500px;"></div>
-          <script type="text/javascript">
-              var locations = [
-                ['Bondi Beach', -33.890542, 151.274856, 4],
-                ['Coogee Beach', -33.923036, 151.259052, 5],
-                ['Cronulla Beach', -34.028249, 151.157507, 3],
-                ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-                ['Maroubra Beach', -33.950198, 151.259302, 1],
-                ["abcd",-33.987678,152.0000]
-              ];
           
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: new google.maps.LatLng(-33.92, 151.50),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-              });
-          
-              var infowindow = new google.maps.InfoWindow();
-          
-              var marker, i;
-          
-              for (i = 0; i < locations.length; i++) { 
-                marker = new google.maps.Marker({
-                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                  map: map
-                });
-          
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                  return function() {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                  }
-                })(marker, i));
-              }
-            </script>
 			  <div class="container">
 				<div class="carousel-caption">
 				  <a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Hire Now &raquo;</a>
