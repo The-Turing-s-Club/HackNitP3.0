@@ -83,7 +83,18 @@
 
       </div>
     </div>
+    <script type='text/javascript'
+    src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
+    <script type='text/javascript'>
+    function GetMap()
+    {
+        var map = new Microsoft.Maps.Map('#myMap');
 
+        //Add your post map load code here.
+    }
+    </script>
+    <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
 
     <!-- Carousel
     ================================================== -->
