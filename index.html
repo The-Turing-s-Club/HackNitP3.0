@@ -81,15 +81,19 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
     <script type='text/javascript'>
+	    
     function GetMap()
-    {
-        var map = new Microsoft.Maps.Map('#myMap');
+   {
+        var map = new Microsoft.Maps.Map('#myMap', {});
 
-        //Add your post map load code here.
+        map.setView({
+            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+            zoom: 15
+        });
     }
     </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[Ao5KfUFB_tGn5q3gb1Talp-DF1DpbkcuQapmuhfxnoEuKU-eSWqQczcH533mnnCh]' async defer></script>
 		    <div id="myMap" style="position:relative;width:100vw;height:400px;"></div>
 
     
